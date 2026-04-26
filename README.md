@@ -20,6 +20,20 @@ set -g @plugin 'wusung/tmux-compass'
 
 If you also use a status-bar plugin (e.g. `tmux-dotbar`), declare `tmux-compass` **after** it so its `status-right` takes effect.
 
+Full example:
+
+```
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'vaaleyard/tmux-dotbar'
+set -g @plugin 'wusung/tmux-compass'
+
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+```
+
 Reload tmux and install:
 
 - inside tmux, press `prefix + I`, or
